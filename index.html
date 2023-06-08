@@ -576,7 +576,7 @@
           <p class="modal-title-text">
             Leave your contacts and we will call you back
           </p>
-          <div class="modal-fild">
+          <div class="modal-field">
             <input
               type="text"
               name="modal-name"
@@ -587,9 +587,10 @@
             />
             <label for="modal-name" class="modal-label">Name</label>
           </div>
-          <div class="modal-fild">
+          <div class="modal-field">
             <input
               type="tel"
+              name="modal-tel"
               id="modal-tel"
               class="modal-input"
               placeholder=" "
@@ -597,22 +598,34 @@
             />
             <label for="modal-tel" class="modal-label">Phone</label>
           </div>
-          <div class="modal-fild">
+          <div class="modal-field">
             <input
               type="email"
-              id="modal-email"
+              name="modal-email"
               id="modal-email"
               class="modal-input"
+              required
             />
             <label for="modal-email" class="modal-label">Email</label>
           </div>
-          <div class="modal-fild">
+          <div class="modal-field">
             <textarea
+              type="text"
               name="modal-comment"
               id="modal-comment"
+              placeholder="Text input"
               class="modal-comment modal-input"
             ></textarea>
             <label for="modal-comment" class="modal-label">Comment</label>
+          </div>
+          <div class="modal-check">
+            <input
+              type="checkbox"
+              id="modal-check"
+              name="modal-check"
+              class="modal-check"  
+            />
+            <label for="modal-check"" class="modal-check">I accept the terms and conditions of the <a href="#">Privacy Policy</a> </label>
           </div>
         </form>
       </div>
