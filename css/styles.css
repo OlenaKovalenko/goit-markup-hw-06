@@ -545,6 +545,8 @@ button {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: var(--footer-background-color);
+  color: var(--primary-white-color);
+  padding-left: 16px;
 }
 
 .footer-form-input::placeholder {
@@ -553,7 +555,7 @@ button {
   line-height: 2;
   letter-spacing: 0.04em;
   color: var(--primary-white-color);
-  padding-left: 16px;
+  /* padding-left: 16px; */
 }
 
 .footer-form-btn {
@@ -561,7 +563,7 @@ button {
   margin: 0;
   margin-left: 24px;
   padding: 8px 24px;
-  /* width: 165px; */
+  width: 165px;
   height: 40px;
   font-family: inherit;
   font-weight: 500;
@@ -573,10 +575,12 @@ button {
   background-color: var(--primary-brand-color);
   border-radius: 4px;
   border: none;
+  outline: none;
 }
 
 .footer-form-btn-desc {
-  display: inline-block;
+  display: flex;
+  align-items: center;
 }
 .footer-form-btn-desc::after {
   margin-left: 16px;
