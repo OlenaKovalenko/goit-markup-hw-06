@@ -521,6 +521,7 @@ button {
 .footer-soc-link:focus {
   background-color: #31d0aa;
 }
+/**================FOOTER FORM===============*/
 
 /**================MODAL WINDOW===============*/
 .backdrop {
@@ -615,15 +616,16 @@ button {
 
 .modal-field {
   position: relative;
+  margin-bottom: 26px;
 }
 
 .modal-input {
-  margin-bottom: 26px;
   padding-left: 38px;
-  width: 360px;
+  width: 100%;
   height: 40px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
+  outline: none;
 }
 .modal-label {
   position: absolute;
@@ -652,8 +654,9 @@ button {
 }
 
 .modal-comment {
+  margin-bottom: 16px;
   padding-left: 16px;
-  width: 360px;
+  width: 100%;
   height: 120px;
   resize: none;
 }

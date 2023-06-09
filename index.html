@@ -562,6 +562,18 @@
             </li>
           </ul>
         </div>
+        <div class="footer-form-wrapper">
+          <form class="footer-form">
+            <p class="footer-for-title">Subscribe</p>
+            <label class="footer-form-label"
+              ><input
+                type="email"
+                class="footer-form-input"
+                placeholder="E-mail"
+            /></label>
+            <button type="submit" class="footer-form-btn">Subscribe</button>
+          </form>
+        </div>
       </div>
     </footer>
     <!-- MODAL WINDOW-->
@@ -594,24 +606,34 @@
             <label for="modal-name" class="modal-label">Name</label>
           </div>
           <div class="modal-field">
-            <input
-              type="tel"
-              name="modal-tel"
-              id="modal-tel"
-              class="modal-input"
-              placeholder=" "
-              required
-            />
+            <div class="modal-inrut-wrap">
+              <input
+                type="tel"
+                name="modal-tel"
+                id="modal-tel"
+                class="modal-input"
+                placeholder=" "
+                required
+              />
+              <svg class="modal-form-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
             <label for="modal-tel" class="modal-label">Phone</label>
           </div>
           <div class="modal-field">
-            <input
-              type="email"
-              name="modal-email"
-              id="modal-email"
-              class="modal-input"
-              required
-            />
+            <div class="modal-inrut-wrap">
+              <input
+                type="email"
+                name="modal-email"
+                id="modal-email"
+                class="modal-input"
+                required
+              />
+              <svg class="modal-form-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
             <label for="modal-email" class="modal-label">Email</label>
           </div>
           <div class="modal-field">
