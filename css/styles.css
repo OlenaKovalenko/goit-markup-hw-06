@@ -637,6 +637,20 @@ button {
   letter-spacing: 0.04em;
   color: #8e8f99;
 }
+
+.modal-inrut-wrap {
+  position: relative;
+}
+
+.modal-form-icon {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 16px;
+}
+
 .modal-comment {
   padding-left: 16px;
   width: 360px;
