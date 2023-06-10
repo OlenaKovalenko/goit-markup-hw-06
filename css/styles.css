@@ -809,7 +809,7 @@ button {
   color: var(--primary-brand-color);
 }
 
-.modal-check-input:checked + .modal-check-label .modal-check-item {
+.modal-check-input:checked + .modal-check-label .modal-check-span {
   background-color: var(--accent-color);
   border: none;
   fill: #f4f4fd;
