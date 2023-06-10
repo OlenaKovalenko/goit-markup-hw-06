@@ -767,11 +767,49 @@ button {
 }
 .modal-check {
   /* margin-top: 16px; */
+}
+
+.modal-check span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+}
+
+.modal-check-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  fill: transparent;
+
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
+}
+
+.modal-check-link {
+  color: var(--primary-brand-color);
+}
+
+.modal-check-input:checked + .modal-check-label span {
+  background-color: var(--accent-color);
+  border: none;
+  fill: #f4f4fd;
+}
+
+.modal-check:checked + .check-text span {
+  background-color: #ff6c00;
+  border: none;
+  fill: #d0efc1;
+}
+
+.modal-check:focus + .check-text span {
+  border-color: #ff6c00;
 }
 
 .modal-send-btn {
@@ -801,15 +839,6 @@ button {
   background-color: var(--accent-color);
 }
 
-.modal-check {
-}
-.modal-check-input {
-}
-.modal-check-label {
-}
-.modal-check-link {
-  color: var(--primary-brand-color);
-}
 /**================PORTFOLIO ===============*/
 
 .portfolio {
