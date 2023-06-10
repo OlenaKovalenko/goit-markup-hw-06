@@ -779,9 +779,7 @@ button {
 }
 
 .modal-check-label {
-  /* align-items: center; */
   fill: transparent;
-
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -791,9 +789,9 @@ button {
 
 .modal-check-span {
   display: inline-flex;
-  /* gap: 6px; */
   justify-content: center;
   align-items: center;
+  margin-right: 8px;
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
