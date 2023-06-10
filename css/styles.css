@@ -707,7 +707,8 @@ button {
   color: #000000;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
-  outline: none;
+  outline: transparent;
+  background-color: transparent;
   transition: border-color var(--transition-dur-and-func);
 }
 
@@ -758,7 +759,7 @@ button {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   resize: none;
-  outline: none;
+  outline: transparent;
   transition: border-color var(--transition-dur-and-func);
 }
 
@@ -774,6 +775,7 @@ button {
   color: rgba(46, 47, 66, 0.4);
 }
 .modal-check {
+  margin-bottom: 24px;
 }
 
 .modal-check-item {
