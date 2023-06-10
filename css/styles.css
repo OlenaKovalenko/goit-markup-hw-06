@@ -745,8 +745,7 @@ button {
 
 .modal-comment {
   /* margin-bottom: 16px; */
-  padding-left: 16px;
-  padding-top: 8px;
+  padding: 8px 16px;
   width: 100%;
   height: 120px;
   font-weight: 400;
@@ -754,6 +753,7 @@ button {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #000000;
+  background-color: transparent;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   resize: none;
@@ -775,14 +775,21 @@ button {
 .modal-check {
 }
 
-.modal-check span {
-  display: flex;
+.modal-check-item {
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
+  fill: transparent;
+  transition: background-color var(--transition-dur-and-func),
+    borber var(--transition-dur-and-func), fill var(--transition-dur-and-func);
+}
+.modal-check-icon {
+  width: 10px;
+  height: 8px;
 }
 
 .modal-check-label {
@@ -802,27 +809,17 @@ button {
   color: var(--primary-brand-color);
 }
 
-.modal-check-input:checked + .modal-check-label span {
+.modal-check-input:checked + .modal-check-label .modal-check-item {
   background-color: var(--accent-color);
   border: none;
   fill: #f4f4fd;
-}
-
-.modal-check:checked + .check-text span {
-  background-color: #ff6c00;
-  border: none;
-  fill: #d0efc1;
-}
-
-.modal-check:focus + .check-text span {
-  border-color: #ff6c00;
 }
 
 .modal-send-btn {
   display: block;
   margin: 0 auto;
   margin-top: 24px;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
   font-family: inherit;
 

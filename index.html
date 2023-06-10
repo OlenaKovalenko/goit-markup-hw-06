@@ -590,10 +590,10 @@
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
         </button>
+        <p class="modal-title-text">
+          Leave your contacts and we will call you back
+        </p>
         <form class="modal-form">
-          <p class="modal-title-text">
-            Leave your contacts and we will call you back
-          </p>
           <div class="modal-field">
             <label for="modal-name" class="modal-label">Name</label>
             <div class="modal-inrut-wrap">
@@ -653,13 +653,14 @@
           </div>
           <div class="modal-check">
             <input
-              type="checkbox"
+              type="user-privacy"
               id="modal-check"
-              name="modal-check"
+              name="user-privacy"
+              value="true"
               class="modal-check-input visually-hidden"
             />
-            <label for="modal-check" class="modal-check-label"
-              ><span>
+            <label for="user-privacy" class="modal-check-label"
+              ><span class="modal-check-item">
                 <svg class="modal-check-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg>
